@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<ion-view>
+  <ion-content class="background">
+
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!--Logo-->
+    <div class="row row-center logo-container">
+      <div class="col" align="center">
+        <img src="/img/logo.png" class="small-logo">
+      </div>
+    </div>
+
+    <div class="card ">
+      <h2 class="card-title">{{currentLanguage.informationTitle}}</h2>
+      <p class="card-text">
+        {{currentLanguage.informationText}}
+      </p>
+    </div>
+
+  </ion-content>
+</ion-view>

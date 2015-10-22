@@ -21,3 +21,157 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+/*---------------------------- GENERAL MIXINS, VARIABLES & FUNCTIONS ----------------------------*/
+
+@mixin flex-container($flex-direction, $flex-wrap, $justify-content, $align-items, $align-content) {
+
+  display: flex;
+  display: -webkit-flex;
+
+  -webkit-flex-direction: $flex-direction;
+  -moz-flex-direction: $flex-direction;
+  flex-direction: $flex-direction;
+
+  -webkit-flex-wrap: $flex-wrap;
+  -moz-flex-wrap: $flex-wrap;
+  flex-wrap: $flex-wrap;
+
+  -webkit-justify-content: $justify-content;
+  -moz-justify-content: $justify-content;
+  justify-content: $justify-content;
+
+  -webkit-align-items: $align-items;
+  -moz-align-items: $align-items;
+  align-items: $align-items;
+
+  -webkit-align-content: $align-content;
+  -moz-align-content: $align-content;
+  align-content: $align-content;
+
+}
+
+@mixin flex-item($flex-basis,$align-self) {
+  -webkit-flex-basis: $flex-basis;
+  -moz-flex-basis: $flex-basis;
+  flex-basis: $flex-basis;
+
+  -webkit-align-self: $align-self;
+  -moz-align-self: $align-self;
+  align-self: $align-self;
+}
+
+@mixin setBackgroundImage($url) {
+  background: url($url) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+@mixin setTransparency($opacity) {
+  opacity: $opacity !important;
+  background-size: 0 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*----------------------------HEADER----------------------------*/
+
+.bar-stable {
+  @include setTransparency(1);
+}
+
+/*----------------------------LOGO----------------------------*/
+@mixin logo-container {
+  margin-top: -50%;
+  margin-bottom: 10%;
+
+}
+
+.large-logo {
+  height: 35%;
+  width: 35%;
+}
+
+.small-logo {
+  height: 15%;
+  width: 15%;
+}
+
+/*----------------------------LANGUAGES PAGE----------------------------*/
+.languages-container {
+  @include flex-container(column, nowrap, center, center, center);
+
+  height: 100%;
+  width: 100%;
+
+}
+
+.languages-item {
+  @include flex-item(auto, center);
+
+  @include setTransparency(0.4);
+
+  height: 100%;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+
+}
+
+.background {
+  @include setBackgroundImage('../img/background.jpg');
+}
+
+.spot {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  border: 10px skyblue;
+  color: black;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  text-align: center;
+  font-size: 31pt;
+  padding-top: 23px;
+}
+
+/*----------------------------INFORMATION PAGE----------------------------*/
+
+.card-title{
+  text-align: right;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.card-text{
+  padding: 3%;
+  font-size: large;
+}
+
+/*----------------------------CAVE PAGE----------------------------*/
+
+.cave-flex{
+  @include flex-container(column, nowrap, center, center, center);
+
+
+  border: 1px solid red;
+}
+
+.cave-item{
+  @include flex-item(auto,center);
+  width:80%;
+  padding: 3%;
+}
+/*----------------------------GALLERY PAGE----------------------------*/
+
+.slidebox{
+  height:100%;
+  width:100%;
+
+}
+
+.slide{
+  height:inherit;
+  width:100%;
+}

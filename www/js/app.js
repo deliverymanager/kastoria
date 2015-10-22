@@ -21,6 +21,8 @@ angular.module('kastoria', ['ionic'])
 
       console.log("Application Starting.....");
 
+
+
     });
   })
 
@@ -64,6 +66,46 @@ angular.module('kastoria', ['ionic'])
           'menuContent': {
             templateUrl: 'templates/pages/cave/index.html',
             controller: 'CaveController'
+          }
+        }
+      })
+      .state('menu.kastoria', {
+        url: '/kastoria',
+        cache: false,
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/pages/kastoria/index.html',
+            controller: 'KastoriaController'
+          }
+        }
+      })
+      .state('menu.gallery', {
+        url: '/gallery',
+        cache: false,
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/pages/gallery/index.html',
+            controller: 'GalleryController'
+          }
+        }
+      })
+      .state('menu.help', {
+        url: '/help',
+        cache: false,
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/pages/help/index.html',
+            controller: 'HelpController'
+          }
+        }
+      })
+      .state('menu.dwhite', {
+        url: '/dwhite',
+        cache: false,
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/pages/dwhite/index.html',
+            controller: 'DwhiteController'
           }
         }
       });

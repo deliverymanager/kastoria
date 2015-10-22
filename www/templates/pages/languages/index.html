@@ -1,6 +1,46 @@
 <!DOCTYPE html>
-<ion-view>
-  <ion-content>
-    languages
+<ion-view class="background">
+
+ <!-- <ion-nav-bar class="bar-stable fully-transparent">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>-->
+
+  <ion-content class="languages-container">
+
+    <!--Logo-->
+    <div class="row row-center logo-container">
+      <div class="col" align="center">
+        <img src="/img/logo.png" class="large-logo">
+      </div>
+    </div>
+
+
+    <!--CARD-->
+    <div class="card languages-item">
+      <div class="item item-text-wrap">
+
+        <div>
+          <p>WELCOME TO KASTORIA <br> PLEASE SELECT LANGUAGE</p>
+        </div>
+
+        <ion-list ng-repeat="item in languages">
+          <ion-item class="row row-center">
+
+            <div class="col col-center">
+              <img style="height: 40%; width: 40%;" src="/img/flags/{{item.language}}.png"
+                   ng-click="selectLanguage(item.language)">
+            </div>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
   </ion-content>
 </ion-view>

@@ -1,0 +1,78 @@
+[
+  {
+    "language": "english",
+    "flagFileName": "english.png",
+    "menuTitle": "Menu",
+    "menuItems": [
+      {
+        "item1": "Language",
+        "item2": "Information",
+        "item3": "Cave Map",
+        "item4": "Map Kastoria",
+        "item5": "Gallery",
+        "item6": "Help",
+        "item7": "DWHITE"
+      }
+    ],
+    "informationTitle": "About Kastoria",
+    "informationText": "Lorem ipsum dolor sit amet, in est tale deleniti voluptatum, lorem vidisse mentitum vim ut. Quis ubique gloriatur est id. Ut dignissim appellantur nam, civibus gubergren intellegat cu per. Voluptaria assueverit eu sit, gubergren voluptaria efficiendi per ut, duo et sale civibus. Ad has ludus dissentias, dicant honestatis voluptatibus ad vis, eu nec tation equidem adipisci. Sea no viris tibique. Ne harum quaestio electram eos, te harum atomorum his.Mel ex iisque ancillae deterruisset. Ea alterum reprehendunt vix, mel an iusto iisque delicata. Eu vix autem maiestatis, eos fabellas constituto ullamcorper ei, ut assum corrumpit percipitur sea. Vis nulla oblique tibique ei, ad eius nostrud pri, eu nisl lucilius evertitur ius. Aeque aliquando adversarium at vim, ipsum salutatus no qui.Vis etiam mollis voluptatum at, sea ornatus corrumpit interpretaris at. Nulla maluisset torquatos an vis. Vis nibh putant accumsan cu, his dolor intellegam scriptorem in. No mundi regione mel, eu dicit dignissim vim.Mel sapientem intellegam complectitur cu, id eam principes consequat. Te mei docendi facilisis efficiantur. Adhuc libris epicurei vim ne, ut vix ornatus adipiscing cotidieque, ad stet lucilius gubergren eam. Eu vel deleniti reprimique, ne possit doctus tractatos usu. Vel soluta tamquam at, qui equidem invidunt cotidieque ut, pri ea dolor discere voluptua.",
+    "informationAlign": "justify",
+    "caveMapTitle": "Cave Map",
+    "caveMapInfo": "Press the number",
+    "points": [
+      {
+        "soundFileName": "1.mp3",
+        "description": "MPA MPA ",
+        "xPosition": 50,
+        "yPosition": 300,
+        "title": "Point Title 1"
+      },
+      {
+        "soundFileName": "2.mp3",
+        "description": "MPA MPA ",
+        "xPosition": 150,
+        "yPosition": 400,
+        "title": "Point Title 2"
+      }
+    ],
+    "mapDescription": "Your Location Now"
+  },
+  {
+    "language": "greek",
+    "flagFileName": "greek.png",
+    "menuTitle": "Menu",
+    "menuItems": [
+      {
+        "item1": "glossa",
+        "item2": "plirofories",
+        "item3": "Cave Map",
+        "item4": "Map Kastoria",
+        "item5": "Gallery",
+        "item6": "voithia",
+        "item7": "DWHITE"
+      }
+    ],
+    "informationTitle": "About Kastoria",
+    "informationText": "Lorem ipsum dolor sit amet, in est tale deleniti voluptatum, lorem vidisse mentitum vim ut. Quis ubique gloriatur est id. Ut dignissim appellantur nam, civibus gubergren intellegat cu per. Voluptaria assueverit eu sit, gubergren voluptaria efficiendi per ut, duo et sale civibus. Ad has ludus dissentias, dicant honestatis voluptatibus ad vis, eu nec tation equidem adipisci. Sea no viris tibique. Ne harum quaestio electram eos, te harum atomorum his.Mel ex iisque ancillae deterruisset. Ea alterum reprehendunt vix, mel an iusto iisque delicata. Eu vix autem maiestatis, eos fabellas constituto ullamcorper ei, ut assum corrumpit percipitur sea. Vis nulla oblique tibique ei, ad eius nostrud pri, eu nisl lucilius evertitur ius. Aeque aliquando adversarium at vim, ipsum salutatus no qui.Vis etiam mollis voluptatum at, sea ornatus corrumpit interpretaris at. Nulla maluisset torquatos an vis. Vis nibh putant accumsan cu, his dolor intellegam scriptorem in. No mundi regione mel, eu dicit dignissim vim.Mel sapientem intellegam complectitur cu, id eam principes consequat. Te mei docendi facilisis efficiantur. Adhuc libris epicurei vim ne, ut vix ornatus adipiscing cotidieque, ad stet lucilius gubergren eam. Eu vel deleniti reprimique, ne possit doctus tractatos usu. Vel soluta tamquam at, qui equidem invidunt cotidieque ut, pri ea dolor discere voluptua.",
+    "informationAlign": "justify",
+    "caveMapTitle": "Cave Map",
+    "caveMapInfo": "Press the number",
+    "points": [
+      {
+        "soundFileName": "1.mp3",
+        "description": "MPA MPA ",
+        "xPosition": 50,
+        "yPosition": 300,
+        "title": "Point Title 1"
+      },
+      {
+        "soundFileName": "2.mp3",
+        "description": "MPA MPA ",
+        "xPosition": 150,
+        "yPosition": 400,
+        "title": "Point Title 2"
+      }
+    ],
+    "mapDescription": "Your Location Now"
+  }
+]

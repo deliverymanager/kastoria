@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<ion-view>
+
+  <ion-content class="background">
+
+    <ion-nav-bar class="bar-stable transparent">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+      <!--Logo-->
+    <div class="row row-center logo-container">
+      <div class="col" align="center">
+        <img src="/img/logo.png" class="small-logo">
+      </div>
+    </div>
+
+
+    <ion-slide-box on-slide-changed="slideHasChanged($index)" class="slidebox">
+      <ion-slide class="slide">
+        <img src="img/gallery/image1.jpg">
+      </ion-slide>
+      <ion-slide class="slide">
+        <img src="img/gallery/image2.jpg">
+      </ion-slide>
+      <ion-slide class="slide">
+        <img src="img/gallery/image3.jpg">
+      </ion-slide>
+    </ion-slide-box>
+
+  </ion-content>
+</ion-view>
