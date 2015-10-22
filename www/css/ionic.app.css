@@ -9352,7 +9352,7 @@ a.button {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 2px blue solid;
+  border: 2px #6fccdb solid;
   color: black;
   width: 23px;
   height: 23px;
