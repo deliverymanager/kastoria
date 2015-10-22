@@ -9450,3 +9450,7 @@ a.button {
 
 .slider-pager .slider-pager-page {
   color: white; }
+
+/*----------------------------KASTORIA PAGE----------------------------*/
+.angular-google-map-container {
+  height: 100%; }
