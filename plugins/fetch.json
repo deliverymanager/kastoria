@@ -55,20 +55,28 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-media": {
+    "cordova-ios-requires-fullscreen": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-media"
+            "id": "cordova-ios-requires-fullscreen"
         },
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-file": {
+    "cordova-plugin-screen-orientation": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-file"
+            "id": "cordova-plugin-screen-orientation"
         },
-        "is_top_level": false,
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-transport-security": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-transport-security"
+        },
+        "is_top_level": true,
         "variables": {}
     }
 }
