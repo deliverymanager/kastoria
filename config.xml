@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.kastoria717724" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.kastoria717724" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>kastoria</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
+    An Ionic Framework and Cordova project.
+  </description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+    Ionic Framework Team
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
+  <access origin="cdvfile://*"/>
+  <allow-navigation href="http://*/*"/>
+  <allow-navigation href="https://*/*"/>
+  <allow-navigation href="data:*"/>
+  <allow-navigation href="*://*/*"/>
+  <preference name="Orientation" value="portrait"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -16,12 +23,9 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
-  <preference name="orientation" value="portrait"/>
-  <preference name="xwalkVersion" value="14+"/>
-  <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect"/>
-  <preference name="xwalkMode" value="embedded"/>
+  <preference name="Orientation" value="portrait"/>
   <feature name="StatusBar">
-    <param name="ios-package" onload="true" value="CDVStatusBar"/>
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
   <platform name="ios">
     <icon src="resources/ios/icon/icon.png" width="57" height="57"/>

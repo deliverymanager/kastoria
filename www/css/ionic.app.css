@@ -9354,33 +9354,41 @@ a.button {
   border-radius: 100px;
   border: 2px #6fccdb solid;
   color: black;
-  width: 23px;
-  height: 23px;
+  width: 33px;
+  height: 33px;
   background-color: azure;
   text-align: center;
-  font-size: 10pt;
+  font-size: 14pt;
   position: absolute;
-  z-index: 3; }
+  z-index: 3;
+  padding-top: 4px; }
+
+.scroll {
+  height: 100%;
+  width: 100%; }
 
 #spot1 {
-  top: 20%;
-  left: 30%; }
+  top: 50%;
+  left: 15%; }
 
 #spot2 {
-  top: 67%;
-  left: 10%; }
+  top: 63%;
+  left: 45%; }
 
 #spot3 {
-  top: 77%;
-  left: 44%; }
+  top: 55%;
+  left: 65%; }
 
 #spot4 {
-  top: 77%;
-  left: 90%; }
+  top: 37%;
+  left: 60%; }
 
 #spot5 {
-  top: 11%;
-  left: 67%; }
+  top: 20%;
+  left: 77%; }
+
+.map {
+  height: auto; }
 
 /*----------------------------INFORMATION PAGE----------------------------*/
 .card-title {

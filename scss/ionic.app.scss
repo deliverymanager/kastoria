@@ -128,80 +128,90 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   border-radius: 100px;
   border: 2px #6fccdb solid;
   color: black;
-  width: 23px;
-  height: 23px;
+  width: 33px;
+  height: 33px;
   background-color: azure;
   text-align: center;
-  font-size: 10pt;
+  font-size: 14pt;
   position: absolute;
   z-index: 3;
+  padding-top: 4px;
 }
 
-#spot1{
-  top: 20%;
-  left: 30%;
+.scroll {
+  height: 100%;
+  width: 100%;
 }
 
-#spot2{
-  top: 96%;
+#spot1 {
+  top: 50%;
+  left: 15%;
+}
+
+#spot2 {
+  top: 63%;
   left: 45%;
 }
 
-#spot3{
-  top: 77%;
-  left: 44%;
+#spot3 {
+  top: 55%;
+  left: 65%;
 }
 
-#spot4{
-  top: 77%;
-  left: 90%;
+#spot4 {
+  top: 37%;
+  left: 60%;
 }
 
-#spot5{
-  top: 11%;
-  left: 67%;
+#spot5 {
+  top: 20%;
+  left: 77%;
+}
+
+.map {
+  height: auto;
 }
 
 /*----------------------------INFORMATION PAGE----------------------------*/
 
-.card-title{          //<---------------------------------------------------------General Card Optimization
+.card-title {
+  //<---------------------------------------------------------General Card Optimization
   text-align: right;
   padding-right: 3%;
   padding-top: 3%;
 }
 
-.card-text{
+.card-text {
   padding: 3%;
   font-size: large;
 }
 
 /*----------------------------CAVE PAGE----------------------------*/
 
-.cave-flex{
+.cave-flex {
   @include flex-container(column, wrap, flex-start, stretch, stretch);
 }
 
-.cave-item-menu{
-  @include flex-item(auto,auto);
+.cave-item-menu {
+  @include flex-item(auto, auto);
 }
 
-.cave-item-card{
-  @include flex-item(auto,center);
-  width:100%;
+.cave-item-card {
+  @include flex-item(auto, center);
+  width: 100%;
   /*margin-top: 30%;*/
   padding: 3%;
 }
 
-
 /*----------------------------GALLERY PAGE----------------------------*/
 
-.slidebox{
-  height:100%;
-  width:100%;
+.slidebox {
+  height: 100%;
+  width: 100%;
 
 }
 
-.slide{
-  height:inherit;
-  width:100%;
+.slide {
+  height: inherit;
+  width: 100%;
 }

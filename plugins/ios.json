@@ -17,6 +17,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -34,10 +38,6 @@
                         },
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -75,28 +75,28 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
         "cordova-ios-requires-fullscreen": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
         "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
         "cordova-plugin-transport-security": {
