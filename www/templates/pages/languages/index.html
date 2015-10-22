@@ -12,31 +12,19 @@
   </ion-nav-bar>-->
 
   <ion-content class="languages-container" has-bouncing="false">
-
-    <!--Logo-->
-    <div class="row row-center logo-container">
-      <div class="col" align="center">
-        <img src="img/logo.png" class="large-logo">
-      </div>
-    </div>
-
-
     <!--CARD-->
     <div class="card languages-item">
+      <div class="item item-avatar">
+        <img src="img/logo.png">
+        <h2 class="card-title">WELCOME TO KASTORIA<br>PLEASE SELECT LANGUAGE</h2>
+      </div>
       <div class="item item-text-wrap">
-
-        <div>
-          <p>WELCOME TO KASTORIA <br> PLEASE SELECT LANGUAGE</p>
-        </div>
-
         <ion-list ng-repeat="item in languages">
           <ion-item class="row row-center">
-
             <div class="col col-center">
               <img style="height: 40%; width: 40%;" src="img/flags/{{item.language}}.png"
                    ng-click="selectLanguage(item.language)">
             </div>
-
           </ion-item>
         </ion-list>
       </div>

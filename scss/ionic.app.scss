@@ -73,7 +73,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background-color: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 /*----------------------------HEADER----------------------------*/
 
 .bar-stable {
@@ -102,8 +101,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   @include flex-container(column, nowrap, center, center, center);
 
   height: 100%;
-  width: 100%;
-
 }
 
 .languages-item {
@@ -111,8 +108,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
   @include setTransparency(0.4);
 
-  height: 100%;
-  width: 100%;
   font-size: x-large;
   text-align: center;
 
