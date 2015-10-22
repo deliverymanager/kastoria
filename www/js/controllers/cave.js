@@ -1,5 +1,5 @@
 angular.module('kastoria')
-  .controller('CaveController', function ($scope, $rootScope, $ionicPopup) {
+  .controller('CaveController', function ($scope, $rootScope, $ionicPopup, $timeout) {
 
 
     $scope.displayMedia = function (point) {
@@ -13,11 +13,25 @@ angular.module('kastoria')
       });
 
     }
+    $scope.soundDrag = new Media('data/english/test.mp3', onSuccess, onError);
+    $timeout(function () {
+      $scope.soundDrag.play();
+    }, 1000);
 
-/*
-    $scope.myTrack = {
-      url: 'data/english/test.mp3'
+    function onSuccess() {
+      console.log("playAudio():Audio Success");
     }
-*/
+
+    // onError Callback
+    //
+    function onError(error) {
+      console.log('code: ' + error.code + ' message: ' + error.message + '\n');
+    }
+
+    /*
+     $scope.myTrack = {
+     url: 'data/english/test.mp3'
+     }
+     */
   });
 
