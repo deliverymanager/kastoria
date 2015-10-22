@@ -208,10 +208,13 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .slidebox {
   height: 100%;
   width: 100%;
-
 }
 
 .slide {
   height: inherit;
   width: 100%;
+}
+
+.slider-pager .slider-pager-page {
+  color: white;
 }
