@@ -6,14 +6,30 @@
     </ion-nav-back-button>
 
     <ion-nav-buttons side="left">
-      <button class="button button-icon button-clear button-light ion-navicon" style="color:white; font-weight: bold;" menu-toggle="left">
+      <button class="button button-icon button-clear button-light ion-navicon" style="color:white; font-weight: bold;"
+              menu-toggle="left">
       </button>
     </ion-nav-buttons>
   </ion-nav-bar>
 
-  <ion-content has-bouncing="false" data-tap-disabled="true">
+  <ion-content data-tap-disabled="true">
 
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="img/logo.png">
+
+        <h2>{{currentLanguage.mapDescription}}</h2>
+      </div>
+
+      <div class="item item-image">
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+          <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"
+                          closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()">
+          </ui-gmap-marker>
+        </ui-gmap-google-map>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
