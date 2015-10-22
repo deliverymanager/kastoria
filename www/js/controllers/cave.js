@@ -8,11 +8,8 @@ angular.module('kastoria')
 
       var mediaPopup = $ionicPopup.show({
         templateUrl:'templates/popups/mediaPopup.html',
-        title:$rootScope.currentLanguage.caveMapTitle+'/'+$rootScope.currentLanguage.points[point].title+'<button class="button button-clear button-dark icon ion-close"></button>',
-        scope:$rootScope,
-        buttons:[
-          {text:"close"}
-        ]
+        title:$rootScope.currentLanguage.caveMapTitle+'/'+$rootScope.currentLanguage.points[point].title,
+        scope:$rootScope
       });
 
     }
