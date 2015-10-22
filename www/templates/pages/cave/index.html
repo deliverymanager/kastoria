@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<ion-view>
-  <ion-content class="background">
+<ion-view class="background">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
 
-    <ion-nav-bar class="bar-stable">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear button-light ion-navicon cave-item-menu" menu-toggle="left">
+        MENU
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
 
-      <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
-        </button>
-      </ion-nav-buttons>
-    </ion-nav-bar>
+  <ion-content class="cave-flex">
 
     <!--Card containing the Map-->
-
-    <div class="cave-flex">
-      <div class="card cave-item">
+    <div class="cave-item-card">
+      <div class="card">
         <!--Title-->
         <h3>{{currentLanguage.caveMapTitle}}</h3>
 
@@ -30,11 +30,10 @@
       </div>
 
       <!--card containing the Point Description-->
-      <div class="card cave-item">
+      <div class="card">
         {{currentLanguage.points[point].description}}
       </div>
     </div>
-
 
   </ion-content>
 </ion-view>

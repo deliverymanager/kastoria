@@ -130,7 +130,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   color: black;
   width: 70px;
   height: 70px;
-  background-color: white;
+  background-color: skyblue;
   text-align: center;
   font-size: 31pt;
   padding-top: 23px;
@@ -138,7 +138,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 /*----------------------------INFORMATION PAGE----------------------------*/
 
-.card-title{
+.card-title{          //<---------------------------------------------------------General Card Optimization
   text-align: right;
   padding-right: 3%;
   padding-top: 3%;
@@ -152,17 +152,21 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 /*----------------------------CAVE PAGE----------------------------*/
 
 .cave-flex{
-  @include flex-container(column, nowrap, center, center, center);
-
-
-  border: 1px solid red;
+  @include flex-container(column, wrap, flex-start, stretch, stretch);
 }
 
-.cave-item{
+.cave-item-menu{
+  @include flex-item(auto,auto);
+}
+
+.cave-item-card{
   @include flex-item(auto,center);
-  width:80%;
+  width:100%;
+  /*margin-top: 30%;*/
   padding: 3%;
 }
+
+
 /*----------------------------GALLERY PAGE----------------------------*/
 
 .slidebox{
