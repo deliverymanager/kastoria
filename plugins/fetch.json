@@ -54,5 +54,29 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-ios-requires-fullscreen": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-ios-requires-fullscreen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-screen-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-screen-orientation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-transport-security": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-transport-security"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

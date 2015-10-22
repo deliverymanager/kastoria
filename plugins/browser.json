@@ -38,6 +38,15 @@
         },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-ios-requires-fullscreen": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-transport-security": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         }
     },
     "dependent_plugins": {}

@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"ios-package\" value=\"YoikScreenOrientation\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -44,6 +48,22 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIRequiresFullScreen": [
+                        {
+                            "xml": "<true />",
+                            "count": 1
+                        }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
                             "count": 1
                         }
                     ]
@@ -71,6 +91,15 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-ios-requires-fullscreen": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-transport-security": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         }
     },
