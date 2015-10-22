@@ -9434,10 +9434,7 @@ a.button {
   flex-basis: auto;
   -webkit-align-self: center;
   -moz-align-self: center;
-  align-self: center;
-  width: 100%;
-  /*margin-top: 30%;*/
-  padding: 3%; }
+  align-self: center; }
 
 /*----------------------------GALLERY PAGE----------------------------*/
 .slidebox {
@@ -9453,4 +9450,4 @@ a.button {
 
 /*----------------------------KASTORIA PAGE----------------------------*/
 .angular-google-map-container {
-  height: 400px; }
+  height: 500px; }

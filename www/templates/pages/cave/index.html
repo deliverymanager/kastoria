@@ -2,7 +2,8 @@
 <ion-view class="background">
   <ion-nav-bar class="bar-stable">
     <ion-nav-buttons side="left">
-      <button class="button button-icon button-clear button-light ion-navicon cave-item-menu" style="color:white; font-weight: bold;" menu-toggle="left">
+      <button class="button button-icon button-clear button-light ion-navicon cave-item-menu"
+              style="color:white; font-weight: bold;" menu-toggle="left">
         MENU
       </button>
     </ion-nav-buttons>
@@ -12,12 +13,14 @@
 
     <!--Card containing the Map-->
     <div class="cave-item-card">
-
       <div class="card map">
-        <!--Title-->
-        <h3>{{currentLanguage.caveMapTitle}}</h3>
-        <!--Subtitle-->
-        <h5>{{currentLanguage.caveMapInfo}}</h5>
+        <div class="item item-avatar">
+          <img src="img/logo.png">
+
+          <h2>{{currentLanguage.caveMapTitle}}</h2>
+
+          <p>{{currentLanguage.caveMapInfo}}</p>
+        </div>
 
         <div id="spot1" class="spot" ng-click="displayMedia(1)">1</div>
         <div id="spot2" class="spot" ng-click="displayMedia(2)">2</div>
@@ -29,17 +32,11 @@
         <div class="item item-image">
           <img src="img/map.png">
         </div>
-
       </div>
-
-
       <!--card containing the Point Description-->
       <div class="card">
         {{currentLanguage.points[point].description}}
       </div>
-
-
     </div>
-
   </ion-content>
 </ion-view>
