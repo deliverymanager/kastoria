@@ -3,20 +3,31 @@ angular.module('kastoria')
 
 
     $scope.displayMedia = function (point) {
-      $rootScope.point = point;
-
-
+      if ($scope.soundDrag) {
+        $scope.soundDrag.stop();
+      }
+      if (window.cordova) {
+        console.log('data/' + $rootScope.currentLanguage.language + '/' + point.soundFileName);
+        $scope.soundDrag = new Media('data/' + $rootScope.currentLanguage.language + '/' + point.soundFileName, onSuccess, onError);
+      }
       var mediaPopup = $ionicPopup.show({
         templateUrl: 'templates/popups/mediaPopup.html',
-        title: $rootScope.currentLanguage.caveMapTitle + '/' + $rootScope.currentLanguage.points[point].title,
+        title: $rootScope.currentLanguage.caveMapTitle + ' / ' + point.title,
         scope: $rootScope
       });
 
-    }
-    $scope.soundDrag = new Media('data/english/test.mp3', onSuccess, onError);
-    $timeout(function () {
-      $scope.soundDrag.play();
-    }, 1000);
+    };
+
+    $scope.playSound = function (progress) {
+      $rootScope.currentLanguage.currentDescription = $rootScope.currentLanguage.points[index].description;
+      if (!window.cordova) {
+        return;
+      }
+      $timeout(function () {
+        $scope.soundDrag.seekTo(progress);
+        $scope.soundDrag.play();
+      }, 1000);
+    };
 
     function onSuccess() {
       console.log("playAudio():Audio Success");
@@ -27,11 +38,5 @@ angular.module('kastoria')
     function onError(error) {
       console.log('code: ' + error.code + ' message: ' + error.message + '\n');
     }
-
-    /*
-     $scope.myTrack = {
-     url: 'data/english/test.mp3'
-     }
-     */
   });
 

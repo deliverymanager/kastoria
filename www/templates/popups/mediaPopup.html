@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<button style="position: absolute;z-index: 5; float: right; top: 0;"  class="button button-clear button-dark icon ion-close"></button>
+<button style="position: absolute;z-index: 5; float: right; top: 0;"
+        class="button button-clear button-dark icon ion-close"></button>
 <div>
   <!--Point Title-->
   <div class="row row-center">
     <!--{{currentLanguage.caveMapTitle}}/{{currentLanguage.points[point].title}}-->
-   <!-- <button class="button button-clear button-light icon ion-close">
-    </button>-->
+    <!-- <button class="button button-clear button-light icon ion-close">
+     </button>-->
   </div>
 
   <!--Buttons-->
   <div class="row row-center">
     <button class="button button-large button-clear button-dark icon ion-pause">
     </button>
-    <button class="button button-large button-clear button-dark icon ion-play">
+    <button class="button button-large button-clear button-dark icon ion-play" ng-click="playSound(0)">
     </button>
     <button class="button button-large button-clear button-dark icon ion-stop">
     </button>
