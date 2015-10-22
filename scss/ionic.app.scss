@@ -126,14 +126,40 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 10px skyblue;
+  border: 2px blue solid;
   color: black;
-  width: 70px;
-  height: 70px;
-  background-color: skyblue;
+  width: 23px;
+  height: 23px;
+  background-color: azure;
   text-align: center;
-  font-size: 31pt;
-  padding-top: 23px;
+  font-size: 10pt;
+  position: absolute;
+  z-index: 3;
+}
+
+#spot1{
+  top: 20%;
+  left: 30%;
+}
+
+#spot2{
+  top: 67%;
+  left: 10%;
+}
+
+#spot3{
+  top: 77%;
+  left: 44%;
+}
+
+#spot4{
+  top: 77%;
+  left: 90%;
+}
+
+#spot5{
+  top: 11%;
+  left: 67%;
 }
 
 /*----------------------------INFORMATION PAGE----------------------------*/

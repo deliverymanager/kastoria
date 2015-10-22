@@ -17,18 +17,22 @@
     <div class="cave-item-card">
 
 
-      <div class="card">
+      <div class="card map">
         <!--Title-->
         <h3>{{currentLanguage.caveMapTitle}}</h3>
         <!--Subtitle-->
         <h5>{{currentLanguage.caveMapInfo}}</h5>
-        <div class="spot" ng-click="displayMedia(1)">1</div>
-        <div class="spot" ng-click="displayMedia(2)">2</div>
-        <div class="spot">3</div>
-        <div class="spot">4</div>
-        <div class="spot">5</div>
+        <div id="spot1" class="spot" ng-click="displayMedia(1)">1</div>
+        <div id="spot2" class="spot" ng-click="displayMedia(2)">2</div>
+        <div id="spot3" class="spot">3</div>
+        <div id="spot4" class="spot">4</div>
+        <div id="spot5" class="spot">5</div>
 
-        <img src="img/map.png">
+        <!--MAP-->
+        <div class="item item-image">
+          <img src="img/map.png">
+        </div>
+
       </div>
 
 
