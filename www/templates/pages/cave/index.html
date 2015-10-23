@@ -8,31 +8,48 @@
       </button>
     </ion-nav-buttons>
   </ion-nav-bar>
-
-  <ion-content class="cave-flex" has-bouncing="false">
-
+  <ion-content has-bouncing="false">
     <!--Card containing the Map-->
-    <div class="cave-item-card">
-      <div class="card map">
-        <div class="item item-avatar">
-          <img src="img/logo.png">
+    <div class="card">
+      <div class="item item-avatar">
+        <img src="img/logo.png">
 
-          <h2>{{currentLanguage.caveMapTitle}}</h2>
+        <h2>{{currentLanguage.caveMapTitle}}</h2>
 
-          <p>{{currentLanguage.caveMapInfo}}</p>
-        </div>
-
-        <div id="spot{{$index + 1}}" class="spot" ng-click="displayMedia(spot)"
-             ng-repeat="spot in currentLanguage.points">1
-        </div>
-        <!--MAP-->
-        <div class="item item-image">
-          <img src="img/map.png">
+        <p>{{currentLanguage.caveMapInfo}}</p>
+      </div>
+      <div class="item item-text row row-center" align="center">
+        <div class="spot col" ng-class="{'spotActive': data.index === $index}"
+             ng-click="stopAll($index); data.index = $index;"
+             ng-repeat="spot in currentLanguage.points">{{$index + 1}}
         </div>
       </div>
-      <!--card containing the Point Description-->
-      <div class="card">
-        {{currentLanguage.currentDescription}}
+      <div class="item item-text">
+        <div class="row row-center" align="center">
+          <button class="button button-large button-clear button-dark icon ion-ios-skipbackward col"
+                  ng-click="playPrevious()">
+          </button>
+          <button class="button button-large button-clear button-dark icon col"
+                  ng-class="{'ion-play': !currentLanguage.points[data.index].playing, 'ion-pause': currentLanguage.points[data.index].playing}"
+                  ng-click="playSound()">
+          </button>
+          <button class="button button-large button-clear button-dark icon ion-ios-skipforward col"
+                  ng-click="playNext()">
+          </button>
+        </div>
+      </div>
+      <div class="item range range-positive">
+        <input type="range" name="volume" ng-model="currentLanguage.points[data.index].progress" min="0"
+               max="{{currentLanguage.points[data.index].duration}}" ng-change="playSound(currentLanguage.points[data.index].progress)">
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-text" ng-if="currentLanguage.points[data.index].description">
+        {{currentLanguage.points[data.index].description}}
+      </div>
+      <!--MAP-->
+      <div class="item item-image">
+        <img src="img/map.png" style="max-width: 500px;">
       </div>
     </div>
   </ion-content>

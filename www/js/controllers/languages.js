@@ -5,6 +5,13 @@ angular.module('kastoria')
 
     /*Selecting Language function*/
     $ionicPlatform.ready(function () {
+
+      if (ionic.Platform.isAndroid()) {
+        $rootScope.rootDir = cordova.file.applicationDirectory + 'www/';
+      } else if (ionic.Platform.isIOS()) {
+        $rootScope.rootDir = "";
+      }
+
       $scope.selectLanguage = function (language) {
 
         $rootScope.currentLanguage = _.findWhere($rootScope.languages, {"language": language});

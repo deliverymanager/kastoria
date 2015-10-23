@@ -73,6 +73,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background-color: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
+
 /*----------------------------HEADER----------------------------*/
 
 .bar-stable {
@@ -127,40 +128,20 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   height: 33px;
   background-color: azure;
   text-align: center;
-  font-size: 14pt;
-  position: absolute;
+  font-size: 16pt;
   z-index: 3;
   padding-top: 4px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.spotActive {
+  background-color: #6fccdb;
 }
 
 .scroll {
   height: 100%;
   width: 100%;
-}
-
-#spot1 {
-  top: 50%;
-  left: 15%;
-}
-
-#spot2 {
-  top: 63%;
-  left: 45%;
-}
-
-#spot3 {
-  top: 55%;
-  left: 65%;
-}
-
-#spot4 {
-  top: 37%;
-  left: 60%;
-}
-
-#spot5 {
-  top: 20%;
-  left: 77%;
 }
 
 .map {

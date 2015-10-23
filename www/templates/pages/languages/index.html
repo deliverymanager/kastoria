@@ -22,7 +22,7 @@
         <ion-list ng-repeat="item in languages">
           <ion-item class="row row-center">
             <div class="col col-center">
-              <img style="height: 40%; width: 40%;" src="img/flags/{{item.language}}.png"
+              <img style="height: 40%; width: 40%;" ng-src="img/flags/{{item.language}}.png"
                    ng-click="selectLanguage(item.language)">
             </div>
           </ion-item>

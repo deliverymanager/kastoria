@@ -5,7 +5,7 @@
     "menuTitle": "Menu",
     "menuItems": [
       {
-        "item1": "Language",
+        "item1": "Languages",
         "item2": "Information",
         "item3": "Cave Map",
         "item4": "Map Kastoria",
@@ -21,18 +21,29 @@
     "caveMapInfo": "Press the number",
     "points": [
       {
-        "soundFileName": "1.mp3",
-        "description": "MPA MPA ",
-        "xPosition": 50,
-        "yPosition": 300,
+        "soundFileName": "sound1.mp3",
+        "description": "MPA MPA reg erg ",
         "title": "Point Title 1"
       },
       {
-        "soundFileName": "2.mp3",
-        "description": "MPA MPA ",
-        "xPosition": 150,
-        "yPosition": 400,
+        "soundFileName": "sound2.mp3",
+        "description": "MPA MPA  er gerg er er erg erg erg",
         "title": "Point Title 2"
+      },
+      {
+        "soundFileName": "sound3.mp3",
+        "description": "MPA MPA r erg ",
+        "title": "Point Title 3"
+      },
+      {
+        "soundFileName": "sound4.mp3",
+        "description": "MPA MPA  erge rg ere",
+        "title": "Point Title 4"
+      },
+      {
+        "soundFileName": "sound5.mp3",
+        "description": "MPA MPA  gerg erg erg",
+        "title": "Point Title 5"
       }
     ],
     "mapDescription": "Your Location Now"
@@ -43,12 +54,12 @@
     "menuTitle": "Menu",
     "menuItems": [
       {
-        "item1": "glossa",
-        "item2": "plirofories",
-        "item3": "Cave Map",
-        "item4": "Map Kastoria",
-        "item5": "Gallery",
-        "item6": "voithia",
+        "item1": "Γλώσσες",
+        "item2": "Πληροφορίες",
+        "item3": "Χάρτης Σπηλαίου",
+        "item4": "Χάρτης Καστοριάς",
+        "item5": "Φωτογραφίες",
+        "item6": "Βοήθεια",
         "item7": "DWHITE"
       }
     ],
@@ -59,18 +70,31 @@
     "caveMapInfo": "Press the number",
     "points": [
       {
-        "soundFileName": "1.mp3",
-        "description": "MPA MPA ",
-        "xPosition": 50,
-        "yPosition": 300,
-        "title": "Point Title 1"
+        "soundFileName": "sound1.mp3",
+        "description": "MPA MPA   εργ εργ εργ εργ",
+        "title": "Point Title 1",
+        "duration": 3
       },
       {
-        "soundFileName": "2.mp3",
-        "description": "MPA MPA ",
-        "xPosition": 150,
-        "yPosition": 400,
-        "title": "Point Title 2"
+        "soundFileName": "sound2.mp3",
+        "description": "MPA MPA εργ εργ ",
+        "title": "Point Title 2",
+        "duration": 58
+      },
+      {
+        "soundFileName": "sound3.mp3",
+        "description": "MPA MPA  εggργ εργ ",
+        "title": "Point Title 3"
+      },
+      {
+        "soundFileName": "sound4.mp3",
+        "description": "MPA MPA  εργ dfb f εργ ",
+        "title": "Point Title 4"
+      },
+      {
+        "soundFileName": "sound5.mp3",
+        "description": "MPA MPA erger εργ εργ",
+        "title": "Point Title 5"
       }
     ],
     "mapDescription": "Your Location Now"

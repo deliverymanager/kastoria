@@ -2,19 +2,15 @@
 <ion-view class="background">
 
   <ion-nav-bar class="bar-stable">
-    <ion-nav-back-button>
-    </ion-nav-back-button>
-
     <ion-nav-buttons side="left">
-      <button class="button button-icon button-clear button-light ion-navicon"
-              style="color:white; font-weight: bold; -webkit-text-stroke: 1px grey" menu-toggle="left">
+      <button class="button button-icon button-clear button-light ion-navicon cave-item-menu"
+              style="color:white; font-weight: bold;" menu-toggle="left">
+        MENU
       </button>
     </ion-nav-buttons>
   </ion-nav-bar>
-
-  <ion-content has-bouncing="false" class="has-header">
-
-    <div class="card ">
+  <ion-content has-bouncing="false" class="has-header has-footer">
+    <div class="card">
       <div class="item item-avatar">
         <img src="img/logo.png">
         <h2 class="card-title">{{currentLanguage.informationTitle}}</h2>
@@ -23,6 +19,5 @@
         {{currentLanguage.informationText}}
       </p>
     </div>
-
   </ion-content>
 </ion-view>

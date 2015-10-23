@@ -25,9 +25,6 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
         "cordova-ios-requires-fullscreen": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
@@ -53,6 +50,9 @@
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         },
         "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+        },
+        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.ionicframework.kastoria717724"
         }
     },
