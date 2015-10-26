@@ -6,47 +6,33 @@
     "menuItems": [
       {
         "item1": "Languages",
-        "item2": "Information",
-        "item3": "Cave Map",
-        "item4": "Map Kastoria",
-        "item5": "Gallery",
-        "item6": "Help",
-        "item7": "DWHITE"
+        "item2": "Tour Guide",
+        "item3": "Map",
+        "item4": "Gallery"
       }
     ],
-    "informationTitle": "About Kastoria",
-    "informationText": "Lorem ipsum dolor sit amet, in est tale deleniti voluptatum, lorem vidisse mentitum vim ut. Quis ubique gloriatur est id. Ut dignissim appellantur nam, civibus gubergren intellegat cu per. Voluptaria assueverit eu sit, gubergren voluptaria efficiendi per ut, duo et sale civibus. Ad has ludus dissentias, dicant honestatis voluptatibus ad vis, eu nec tation equidem adipisci. Sea no viris tibique. Ne harum quaestio electram eos, te harum atomorum his.Mel ex iisque ancillae deterruisset. Ea alterum reprehendunt vix, mel an iusto iisque delicata. Eu vix autem maiestatis, eos fabellas constituto ullamcorper ei, ut assum corrumpit percipitur sea. Vis nulla oblique tibique ei, ad eius nostrud pri, eu nisl lucilius evertitur ius. Aeque aliquando adversarium at vim, ipsum salutatus no qui.Vis etiam mollis voluptatum at, sea ornatus corrumpit interpretaris at. Nulla maluisset torquatos an vis. Vis nibh putant accumsan cu, his dolor intellegam scriptorem in. No mundi regione mel, eu dicit dignissim vim.Mel sapientem intellegam complectitur cu, id eam principes consequat. Te mei docendi facilisis efficiantur. Adhuc libris epicurei vim ne, ut vix ornatus adipiscing cotidieque, ad stet lucilius gubergren eam. Eu vel deleniti reprimique, ne possit doctus tractatos usu. Vel soluta tamquam at, qui equidem invidunt cotidieque ut, pri ea dolor discere voluptua.",
-    "informationAlign": "justify",
-    "caveMapTitle": "Cave Map",
-    "caveMapInfo": "Press the number",
     "points": [
       {
         "soundFileName": "sound1.mp3",
-        "description": "MPA MPA reg erg ",
-        "title": "Point Title 1"
+        "description": "Welcome to the Dragon Cave in Kastoria."
       },
       {
         "soundFileName": "sound2.mp3",
-        "description": "MPA MPA  er gerg er er erg erg erg",
-        "title": "Point Title 2"
+        "description": "The cave, which belongs to the Municipality of Kastoria, operates under its Welfare Business and it is supervised by the Ephorate Paleoanthropology - Speleology of Northern Greece.<br>You are not allowed to take photographs and video, as well as to touch the stalactites or stalagmites.<br>We will follow a route of 350 meters along with the junctions, passing by two solid bridges and a floating one and we will see seven lakes which meet the lake Orestiada.<br>The cave was discovered in the 40s by young locals. It was followed by several explorations. It was first mapped in 1967. In 1998 it was included in a European program which started procedures of its exploitation. In December 2009 it opened its doors to the public."
       },
       {
         "soundFileName": "sound3.mp3",
-        "description": "MPA MPA r erg ",
-        "title": "Point Title 3"
+        "description": "The cave is still active and continues to grow. The rainwater passes through the openings of the mountain and the stalactite is created through limestone and chemical reactions. One centimeter of stalactite takes about 100 years to be created. The cave is dated approximately 6 million years ago. The types of stalactites found in this cave are columns, curtains, cataracts and tubular stalactites.<br>Also, it is the most modern and safe cave in the Balkans, as it has the most sophisticated control machines of environmental conditions and security systems. On the top you can see the mesh with steel wire from which 1 sqm can lift up to 16 tons."
       },
       {
         "soundFileName": "sound4.mp3",
-        "description": "MPA MPA  erge rg ere",
-        "title": "Point Title 4"
+        "description": "Traces of human presence have not been noticed, except for this point where the bones of the cave bear have been found, which lived during the Pleistocene (10.000B.C.) and it is estimated that they weighed half a ton and the height of it reached 2.5 meters. Experts believe that the mammal fell from an opening in the roof of the mountain. Lack of food and lack of the way to escape led it to its death within the cave."
       },
       {
         "soundFileName": "sound5.mp3",
-        "description": "MPA MPA  gerg erg erg",
-        "title": "Point Title 5"
+        "description": "Traces of human presence have not been noticed, except for this point where the bones of the cave bear have been found, which lived during the Pleistocene (10.000B.C.) and it is estimated that they weighed half a ton and the height of it reached 2.5 meters. Experts believe that the mammal fell from an opening in the roof of the mountain. Lack of food and lack of the way to escape led it to its death within the cave."
       }
-    ],
-    "mapDescription": "Your Location Now"
+    ]
   },
   {
     "language": "greek",
@@ -55,48 +41,32 @@
     "menuItems": [
       {
         "item1": "Γλώσσες",
-        "item2": "Πληροφορίες",
-        "item3": "Χάρτης Σπηλαίου",
-        "item4": "Χάρτης Καστοριάς",
-        "item5": "Φωτογραφίες",
-        "item6": "Βοήθεια",
-        "item7": "DWHITE"
+        "item2": "Ξεναγός",
+        "item3": "Χάρτης",
+        "item4": "Φωτογραφίες"
       }
     ],
-    "informationTitle": "About Kastoria",
-    "informationText": "Lorem ipsum dolor sit amet, in est tale deleniti voluptatum, lorem vidisse mentitum vim ut. Quis ubique gloriatur est id. Ut dignissim appellantur nam, civibus gubergren intellegat cu per. Voluptaria assueverit eu sit, gubergren voluptaria efficiendi per ut, duo et sale civibus. Ad has ludus dissentias, dicant honestatis voluptatibus ad vis, eu nec tation equidem adipisci. Sea no viris tibique. Ne harum quaestio electram eos, te harum atomorum his.Mel ex iisque ancillae deterruisset. Ea alterum reprehendunt vix, mel an iusto iisque delicata. Eu vix autem maiestatis, eos fabellas constituto ullamcorper ei, ut assum corrumpit percipitur sea. Vis nulla oblique tibique ei, ad eius nostrud pri, eu nisl lucilius evertitur ius. Aeque aliquando adversarium at vim, ipsum salutatus no qui.Vis etiam mollis voluptatum at, sea ornatus corrumpit interpretaris at. Nulla maluisset torquatos an vis. Vis nibh putant accumsan cu, his dolor intellegam scriptorem in. No mundi regione mel, eu dicit dignissim vim.Mel sapientem intellegam complectitur cu, id eam principes consequat. Te mei docendi facilisis efficiantur. Adhuc libris epicurei vim ne, ut vix ornatus adipiscing cotidieque, ad stet lucilius gubergren eam. Eu vel deleniti reprimique, ne possit doctus tractatos usu. Vel soluta tamquam at, qui equidem invidunt cotidieque ut, pri ea dolor discere voluptua.",
-    "informationAlign": "justify",
-    "caveMapTitle": "Cave Map",
-    "caveMapInfo": "Press the number",
     "points": [
       {
         "soundFileName": "sound1.mp3",
-        "description": "MPA MPA   εργ εργ εργ εργ",
-        "title": "Point Title 1",
-        "duration": 3
+        "description": "Καλωσορίσατε στο Σπήλαιο Δράκου Καστοριάς."
       },
       {
         "soundFileName": "sound2.mp3",
-        "description": "MPA MPA εργ εργ ",
-        "title": "Point Title 2",
-        "duration": 58
+        "description": "Το σπήλαιο ανήκει στον Δήμο Καστοριάς, λειτουργεί από την Κοινωφελή του Επιχείρηση και εποπτεύεται από την Εφορεία Παλαιοανθρωπολογίας-Σπηλαιολογίας Β. Ελλάδος.<br>Απαγορεύεται η λήψη φωτογραφιών και video, καθώς και να αγγίζετε σταλακτίτες ή σταλαγμίτες.<br>      Θα διασχίσουμε μια φυσική διαδρομή 350μ. μαζί με τις διακλαδώσεις, περνώντας από δύο συμπαγείς γέφυρες και μία πλωτή και θα δούμε επτά λίμνες που επικοινωνούν με την λίμνη Ορεστιάδα.Το σπήλαιο ανακαλύφθηκε την δεκαετία του ΄40 από καστοριανούς νεαρούς. Ακολούθησαν διάφορες εξερευνήσεις. Το 1967 έγινε η πρώτη χαρτογράφησή του. Το 1998 εντάχθηκε σε Ευρωπαϊκό πρόγραμμα και ξεκίνησαν οι διαδικασίες αξιοποίησής  του. Τον Δεκέμβριο του 2009 άνοιξε τις πύλες του για το κοινό.<br>Η θερμοκρασία είναι σταθερή (χειμώνα- καλοκαίρι) 16ο-18ο και η υγρασία του κυμαίνεται μεταξύ 90%-95%."
       },
       {
         "soundFileName": "sound3.mp3",
-        "description": "MPA MPA  εggργ εργ ",
-        "title": "Point Title 3"
+        "description": "Το σπήλαιο είναι ακόμα ενεργό και συνεχίζει να αναπτύσσεται. Από τα βρόχινα νερά, περνάει το νερό από τα ανοίγματα του βουνού και μέσω ασβεστολιθικών πετρωμάτων και χημικών αντιδράσεων δημιουργείται ο σταλακτίτης. Για την δημιουργία 1 εκατοστού σταλακτίτη απαιτούνται περίπου 100 χρόνια. Το σπήλαιο χρονολογείται στα 6 εκ. χρόνια. Τα είδη των σταλακτικών που συναντάμε σε αυτό το Σπήλαιο είναι οι κολόνες, οι κουρτίνες, ο καταρράκτης και οι σωληνοειδείς σταλακτίτες.<br>Επίσης πρόκειται για το πιο σύγχρονο και ασφαλές Σπήλαιο στα Βαλκάνια, καθώς διαθέτει τα πιο εξελιγμένα μηχανήματα ελέγχου περιβαλλοντικών συνθηκών και συστημάτων ασφαλείας. Εδώ ψηλά μπορείτε να δείτε το πλέγμα με ατσαλόσυρμα όπου το 1 τμ. σηκώνει βάρος μέχρι και 16 τόνους."
       },
       {
         "soundFileName": "sound4.mp3",
-        "description": "MPA MPA  εργ dfb f εργ ",
-        "title": "Point Title 4"
+        "description": "Το σπήλαιο είναι ακόμα ενεργό και συνεχίζει να αναπτύσσεται. Από τα βρόχινα νερά, περνάει το νερό από τα ανοίγματα του βουνού και μέσω ασβεστολιθικών πετρωμάτων και χημικών αντιδράσεων δημιουργείται ο σταλακτίτης. Για την δημιουργία 1 εκατοστού σταλακτίτη απαιτούνται περίπου 100 χρόνια. Το σπήλαιο χρονολογείται στα 6 εκ. χρόνια. Τα είδη των σταλακτικών που συναντάμε σε αυτό το Σπήλαιο είναι οι κολόνες, οι κουρτίνες, ο καταρράκτης και οι σωληνοειδείς σταλακτίτες.<br>Επίσης πρόκειται για το πιο σύγχρονο και ασφαλές Σπήλαιο στα Βαλκάνια, καθώς διαθέτει τα πιο εξελιγμένα μηχανήματα ελέγχου περιβαλλοντικών συνθηκών και συστημάτων ασφαλείας. Εδώ ψηλά μπορείτε να δείτε το πλέγμα με ατσαλόσυρμα όπου το 1 τμ. σηκώνει βάρος μέχρι και 16 τόνους."
       },
       {
         "soundFileName": "sound5.mp3",
-        "description": "MPA MPA erger εργ εργ",
-        "title": "Point Title 5"
+        "description": "Το σπήλαιο είναι ακόμα ενεργό και συνεχίζει να αναπτύσσεται. Από τα βρόχινα νερά, περνάει το νερό από τα ανοίγματα του βουνού και μέσω ασβεστολιθικών πετρωμάτων και χημικών αντιδράσεων δημιουργείται ο σταλακτίτης. Για την δημιουργία 1 εκατοστού σταλακτίτη απαιτούνται περίπου 100 χρόνια. Το σπήλαιο χρονολογείται στα 6 εκ. χρόνια. Τα είδη των σταλακτικών που συναντάμε σε αυτό το Σπήλαιο είναι οι κολόνες, οι κουρτίνες, ο καταρράκτης και οι σωληνοειδείς σταλακτίτες.<br>Επίσης πρόκειται για το πιο σύγχρονο και ασφαλές Σπήλαιο στα Βαλκάνια, καθώς διαθέτει τα πιο εξελιγμένα μηχανήματα ελέγχου περιβαλλοντικών συνθηκών και συστημάτων ασφαλείας. Εδώ ψηλά μπορείτε να δείτε το πλέγμα με ατσαλόσυρμα όπου το 1 τμ. σηκώνει βάρος μέχρι και 16 τόνους."
       }
-    ],
-    "mapDescription": "Your Location Now"
+    ]
   }
 ]

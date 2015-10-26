@@ -1,5 +1,5 @@
 angular.module('kastoria')
-  .controller("LanguagesController", function ($scope, $rootScope, _, $timeout, $ionicSideMenuDelegate, $ionicPlatform) {
+  .controller("LanguagesController", function ($scope, $rootScope, _, $timeout, $ionicSideMenuDelegate, $ionicPlatform, $state) {
 
     console.log("LanguagesController loaded...");
 
@@ -15,11 +15,7 @@ angular.module('kastoria')
       $scope.selectLanguage = function (language) {
 
         $rootScope.currentLanguage = _.findWhere($rootScope.languages, {"language": language});
-
-        $timeout(function () {
-          $ionicSideMenuDelegate.toggleLeft(true);
-        });
-      }
+        $state.go('menu.cave');
+      };
     });
-
   });

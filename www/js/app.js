@@ -42,18 +42,6 @@ angular.module('kastoria', ['ionic', 'uiGmapgoogle-maps', 'ngIOS9UIWebViewPatch'
           }
         }
       })
-
-      .state('menu.information', {
-        url: '/information',
-        cache: false,
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/pages/information/index.html',
-            controller: 'InformationController'
-          }
-        }
-      })
-
       .state('menu.cave', {
         url: '/cave',
         cache: false,
@@ -81,26 +69,6 @@ angular.module('kastoria', ['ionic', 'uiGmapgoogle-maps', 'ngIOS9UIWebViewPatch'
           'menuContent': {
             templateUrl: 'templates/pages/gallery/index.html',
             controller: 'GalleryController'
-          }
-        }
-      })
-      .state('menu.help', {
-        url: '/help',
-        cache: false,
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/pages/help/index.html',
-            controller: 'HelpController'
-          }
-        }
-      })
-      .state('menu.dwhite', {
-        url: '/dwhite',
-        cache: false,
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/pages/dwhite/index.html',
-            controller: 'DwhiteController'
           }
         }
       });
