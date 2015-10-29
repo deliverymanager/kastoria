@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<ion-view class="background">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear button-light ion-navicon cave-item-menu"
+              style="color:white; font-weight: bold;" menu-toggle="left">
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content has-bouncing="false" class="has-header has-footer">
+
+    <!--Map Card-->
+    <div class="card rounded-corners map-card">
+      <div class="item item-text" ng-if="currentLanguage.points[data.index].description">
+        {{currentLanguage.points[data.index].description}}
+      </div>
+      <!--MAP-->
+      <div class="item item-image">
+        <img src="img/map.png" style="max-width: 500px;">
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

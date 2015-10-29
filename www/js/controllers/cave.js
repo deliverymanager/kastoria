@@ -1,5 +1,5 @@
 angular.module('kastoria')
-  .controller('CaveController', function ($scope, $rootScope, $ionicPopup, $timeout, _, $interval) {
+  .controller('CaveController', function ($scope, $rootScope, $ionicPopup, $timeout, _, $interval, $state) {
 
     $scope.data = {index: 0};
 
@@ -109,6 +109,13 @@ angular.module('kastoria')
     function onError(error) {
       console.log('code: ' + error.code + ' message: ' + error.message + '\n');
     }
+
+    /*Navigation Function*/
+    $scope.navigateToMap = function(){
+      $state.go('menu.map');
+    }
+
+
   })
 ;
 

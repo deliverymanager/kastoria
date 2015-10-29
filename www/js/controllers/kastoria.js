@@ -4,7 +4,7 @@ angular.module('kastoria')
     $scope.myLocation = {
       lat: '40.505038',
       lng: '21.284637'
-    }
+    };
 
 
     $scope.map = {

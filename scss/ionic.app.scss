@@ -74,6 +74,30 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   border-color: rgba(0, 0, 0, 0) !important;
 }
 
+
+.rounded-corners{
+  border-radius: 20px;
+}
+
+.logo{
+  height:100%;
+  width:100%;
+}
+
+
+/*General Card Optimization*/
+.card-title {
+  text-align: right;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.card-text {
+  padding: 3%;
+  font-size: large;
+}
+
+
 /*----------------------------HEADER----------------------------*/
 
 .bar-stable {
@@ -98,19 +122,53 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 /*----------------------------LANGUAGES PAGE----------------------------*/
-.languages-container {
-  @include flex-container(column, nowrap, center, center, center);
 
+.languages-flex-container{
+  @include flex-container(column,wrap,flex-start,center,space-between);
+}
+
+.languages-flex-item{
+  @include flex-item(auto,center);
+}
+
+.languages-list-flex-container{
+  @include flex-container(column,wrap,flex-start,center,stretch);
+}
+
+.languages-list-flex-item{
+  @include flex-item(auto,center);
   height: 100%;
 }
 
 .languages-item {
-  @include flex-item(auto, center);
 
-  @include setTransparency(0.4);
+  left: 25%;
+  width: 50%;
+  margin-top: 3%;
+  border-radius: 20px;
+  padding: 2%;
 
-  font-size: x-large;
-  text-align: center;
+  img {
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  span{
+    padding-left: 15%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 30pt;
+  }
+
+
+  @media screen and (min-width: 300px) {
+    span { font-size: 15pt; }
+  }
+  @media screen and (min-width: 640px) {
+    span { font-size: 30pt; }
+  }
+
+
 
 }
 
@@ -118,25 +176,27 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   @include setBackgroundImage('../img/background.jpg');
 }
 
+/*----------------------------SPOTS----------------------------*/
+
+/*Color: #3A8AA3 */
+
 .spot {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  border: 2px #6fccdb solid;
-  color: black;
-  width: 33px;
-  height: 33px;
-  background-color: azure;
+  color: #3A8AA3;
+  padding: 13px;
+  background-color: #DCDCDC;
   text-align: center;
-  font-size: 16pt;
+  font-size: 20pt;
   z-index: 3;
-  padding-top: 4px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .spotActive {
-  background-color: #6fccdb;
+  background-color: #3A8AA3;
+  color: white;
 }
 
 .scroll {
@@ -150,20 +210,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 /*----------------------------INFORMATION PAGE----------------------------*/
 
-.card-title {
-  //<---------------------------------------------------------General Card Optimization
-  text-align: right;
-  padding-right: 3%;
-  padding-top: 3%;
-}
-
-.card-text {
-  padding: 3%;
-  font-size: large;
-}
 
 /*----------------------------CAVE PAGE----------------------------*/
 
+/*Cave Page Flexbox*/
 .cave-flex {
   @include flex-container(column, wrap, flex-start, stretch, stretch);
 }
@@ -174,6 +224,50 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .cave-item-card {
   @include flex-item(auto, center);
+}
+
+/*Slider Color*/
+.range input{
+  &::-webkit-slider-thumb {
+    background-color: #3A8AA3;
+  }
+}
+
+/*Map Button*/
+
+.map-button{
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: #DCDCDC;
+  padding: 3px;
+  background-color: #3A8AA3;
+  text-align: center;
+  font-size: 18pt;
+  z-index: 3;
+  width: 90px;
+
+  margin:0 auto;
+  display:block;
+}
+
+/*Description Text*/
+.description-text{
+  padding: 5%;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 300px) {
+  .description-text { font-size: 10pt; }
+}
+@media screen and (min-width: 640px) {
+  .description-text { font-size: 15pt; }
+}
+
+/*----------------------------MAP PAGE----------------------------*/
+
+.map-card{
+  height:100%;
 }
 
 /*----------------------------GALLERY PAGE----------------------------*/
