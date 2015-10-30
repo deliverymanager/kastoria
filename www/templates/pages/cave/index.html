@@ -19,7 +19,7 @@
       </div>
       <div class="item item-text row row-center" align="center">
         <div class="spot col" ng-class="{'spotActive': data.index === $index}"
-             ng-click="changeSpot($index); data.index = $index;"
+             ng-click="data.index = $index; changeSpot();"
              ng-repeat="spot in currentLanguage.points">{{$index + 1}}
         </div>
       </div>
@@ -41,7 +41,8 @@
           <button class="button button-large button-clear button-dark icon" ng-click='togglePlay()'
                   ng-class="{'ion-play': sound.paused, 'ion-pause': !sound.paused}">
           </button>
-          <button class="button button-large button-clear button-dark icon ion-stop" ng-click='sound.restart()'></button>
+          <button class="button button-large button-clear button-dark icon ion-stop"
+                  ng-click='sound.restart()'></button>
 
           <button class="button button-large button-clear button-dark icon ion-ios-skipforward col"
                   ng-click="playNext()">

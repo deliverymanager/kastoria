@@ -15,7 +15,8 @@ angular.module('kastoria')
       $scope.selectLanguage = function (language) {
 
         $rootScope.currentLanguage = _.findWhere($rootScope.languages, {"language": language});
-        $ionicHistory.nextViewOptions({ disableBack: true });
+        $ionicHistory.nextViewOptions({disableBack: true});
+        $rootScope.data = {index: 0};
         $state.go('menu.cave');
       };
     });
