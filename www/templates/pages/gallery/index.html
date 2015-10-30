@@ -8,20 +8,13 @@
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-slide-box on-slide-changed="slideHasChanged($index)" class="slidebox" scroll="false" does-continue="true">
-    <ion-slide class="slide" style="background: url('img/gallery/slide1.jpg') no-repeat center center;
+
+    <ion-slide ng-repeat="i in [].constructor(16) track by $index" class="slide" style="background: url('img/gallery/slide{{$index+1}}.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;">
     </ion-slide>
-    <ion-slide class="slide" style="background: url('img/gallery/slide2.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;">
-    </ion-slide>
-    <ion-slide class="slide" style="background: url('img/gallery/slide3.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;">
-    </ion-slide>
+
   </ion-slide-box>
+
 </ion-view>
