@@ -9,15 +9,27 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference default=\"14+\" name=\"xwalkVersion\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference default=\"--disable-pull-to-refresh-effect\" name=\"xwalkCommandLine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference default=\"embedded\" name=\"xwalkMode\" />",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"android-package\" value=\"net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation\" /></feature>",
                             "count": 1
                         },
                         {
@@ -35,21 +47,23 @@
                         {
                             "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
-                        },
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
                         {
-                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<preference default=\"14+\" name=\"xwalkVersion\" />",
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<preference default=\"--disable-pull-to-refresh-effect\" name=\"xwalkCommandLine\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference default=\"embedded\" name=\"xwalkMode\" />",
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
                         }
                     ]
@@ -64,60 +78,39 @@
                         }
                     ]
                 }
-            },
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
-                            "count": 1
-                        }
-                    ]
-                }
             }
         }
     },
     "installed_plugins": {
         "cordova-ios-requires-fullscreen": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-screen-orientation": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-transport-security": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
         },
         "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "com.ionicframework.kastoria717724"
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-transport-security": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "gr.dwhite.kastoria"
         }
     },
     "dependent_plugins": {}

@@ -95,15 +95,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   font-size: large;
 }
 
-
-.text-right{
+.text-right {
   text-align: right;
 }
 
-.text-justify{
-  text-align: justify;
+.text-left {
+  text-align: left;
 }
 
+.text-justify {
+  text-align: justify;
+}
 
 /*----------------------------HEADER----------------------------*/
 
@@ -204,7 +206,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   height: auto;
 }
 
-
 /*----------------------------CAVE PAGE----------------------------*/
 
 /*Cave Page Flexbox*/
@@ -245,10 +246,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   margin: 0 auto;
   display: block;
 
-
-
 }
-
 
 /*Description Text*/
 .description-text {

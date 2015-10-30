@@ -19,7 +19,7 @@
       </div>
       <div class="item item-text row row-center" align="center">
         <div class="spot col" ng-class="{'spotActive': data.index === $index}"
-             ng-click="data.index = $index; changeSpot();"
+             ng-click="changeSpot($index);"
              ng-repeat="spot in currentLanguage.points">{{$index + 1}}
         </div>
       </div>
@@ -33,16 +33,11 @@
                   ng-click="playPrevious()">
           </button>
 
-          <!--<button class="button button-large button-clear button-dark icon col"
-                  ng-class="{'ion-play': !currentLanguage.points[data.index].playing, 'ion-pause': currentLanguage.points[data.index].playing}"
-                  ng-click="playSound()">
-          </button>-->
-
-          <button class="button button-large button-clear button-dark icon" ng-click='togglePlay()'
-                  ng-class="{'ion-play': sound.paused, 'ion-pause': !sound.paused}">
+          <button class="button button-large button-clear button-dark icon col" ng-click='togglePlay()'
+                  ng-class="{'ion-play': currentLanguage.points[data.index].sound.paused, 'ion-pause': !currentLanguage.points[data.index].sound.paused}">
           </button>
-          <button class="button button-large button-clear button-dark icon ion-stop"
-                  ng-click='sound.restart()'></button>
+          <button class="button button-large button-clear button-dark icon ion-stop col"
+                  ng-click='currentLanguage.points[data.index].sound.restart()'></button>
 
           <button class="button button-large button-clear button-dark icon ion-ios-skipforward col"
                   ng-click="playNext()">
@@ -58,7 +53,7 @@
                 max="{{currentLanguage.points[data.index].duration}}" ng-change="playSound(currentLanguage.points[data.index].progress)">-->
 
         <input type="range" name="volume"
-               ng-model="sound.currentTime"
+               ng-model="currentLanguage.points[data.index].sound.currentTime"
                min="0"
                max="{{currentLanguage.points[data.index].duration}}"
                step="0.1">
