@@ -1,6 +1,7 @@
 [
   {
     "language": "english",
+    "languageTitle": "English",
     "flagFileName": "english.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -36,6 +37,7 @@
   },
   {
     "language": "greek",
+    "languageTitle": "Ελληνικά",
     "flagFileName": "greek.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -71,6 +73,7 @@
   },
   {
     "language": "french",
+    "languageTitle": "Français",
     "flagFileName": "french.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -106,6 +109,7 @@
   },
   {
     "language": "german",
+    "languageTitle": "Deutsche",
     "flagFileName": "german.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -141,6 +145,7 @@
   },
   {
     "language": "russian",
+    "languageTitle": "Русский",
     "flagFileName": "russian.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -176,6 +181,7 @@
   },
   {
     "language": "chinese",
+    "languageTitle": "中国",
     "flagFileName": "chinese.png",
     "menuTitle": "Menu",
     "menuItems": [
@@ -211,6 +217,7 @@
   },
   {
     "language": "hebrew",
+    "languageTitle": "עברית",
     "flagFileName": "hebrew.png",
     "menuTitle": "Menu",
     "menuItems": [

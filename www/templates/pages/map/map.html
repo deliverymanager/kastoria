@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <ion-view class="background">
   <ion-nav-bar class="bar-stable">
+
     <ion-nav-buttons side="left">
       <button class="button button-icon button-clear button-light ion-navicon"
-              style="color:white; font-weight: bold;" menu-toggle="left">
+              style="color:white; font-weight: bold;" menu-toggle="left">MENU
       </button>
     </ion-nav-buttons>
-  </ion-nav-bar>
-  <ion-content has-bouncing="false" class="has-header has-footer" scroll="false">
 
-    <!--Map Card-->
-    <div class="card rounded-corners map-card">
-      <div class="item item-text" ng-if="currentLanguage.points[data.index].description">
-        {{currentLanguage.points[data.index].description}}
+    <ion-nav-buttons side="right">
+      <button class="button button-icon icon-right button-clear button-large button-light ion-chevron-right"
+              style="color:white; font-weight: bold;"
+              ng-click="goToTour()">
+        {{currentLanguage.menuItems[0].item2}}
+      </button>
+    </ion-nav-buttons>
+
+
+  </ion-nav-bar>
+  <ion-content has-bouncing="false" class="has-header has-footer row row-center" scroll="false">
+
+      <!--Map Card-->
+      <div class="card rounded-corners map-card col col-center">
+        <div class="item item-avatar">
+          <img src="img/logo.png">
+          <div class="card-title" style="font-size: 17pt;">{{currentLanguage.menuItems[0].item3}}</div>
+        </div>
+        <!--<div class="item item-text" ng-if="currentLanguage.points[data.index].description">
+          {{currentLanguage.points[data.index].description}}
+        </div>-->
+        <!--MAP-->
+        <div class="item item-image">
+          <img src="img/map.jpg" style="max-width: 1000px;">
+        </div>
       </div>
-      <!--MAP-->
-      <div class="item item-image">
-        <img src="img/map.png" style="max-width: 500px;">
-      </div>
-    </div>
 
   </ion-content>
 </ion-view>

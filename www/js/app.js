@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('kastoria', ['ionic', 'ngIOS9UIWebViewPatch'])
+angular.module('kastoria', ['ionic', 'ngIOS9UIWebViewPatch', 'ngAudio'])
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -49,16 +49,6 @@ angular.module('kastoria', ['ionic', 'ngIOS9UIWebViewPatch'])
           'menuContent': {
             templateUrl: 'templates/pages/cave/index.html',
             controller: 'CaveController'
-          }
-        }
-      })
-      .state('menu.kastoria', {
-        url: '/kastoria',
-        cache: false,
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/pages/kastoria/index.html',
-            controller: 'KastoriaController'
           }
         }
       })

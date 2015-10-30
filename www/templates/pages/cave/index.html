@@ -12,45 +12,76 @@
 
     <!--Media Card-->
     <div class="card rounded-corners">
-      <div class="item item-thumbnail-left">
+      <div class="item item-avatar">
         <img src="img/logo.png">
+
         <div class="card-title" style="font-size: 17pt;">{{currentLanguage.menuItems[0].item2}}</div>
       </div>
       <div class="item item-text row row-center" align="center">
         <div class="spot col" ng-class="{'spotActive': data.index === $index}"
-             ng-click="stopAll($index); data.index = $index;"
+             ng-click="changeSpot($index); data.index = $index;"
              ng-repeat="spot in currentLanguage.points">{{$index + 1}}
         </div>
       </div>
+
+
+      <!--PLAY BUTTON-->
       <div class="item item-text">
         <div class="row row-center" align="center">
+
           <button class="button button-large button-clear button-dark icon ion-ios-skipbackward col"
                   ng-click="playPrevious()">
           </button>
-          <button class="button button-large button-clear button-dark icon col"
+
+          <!--<button class="button button-large button-clear button-dark icon col"
                   ng-class="{'ion-play': !currentLanguage.points[data.index].playing, 'ion-pause': currentLanguage.points[data.index].playing}"
                   ng-click="playSound()">
+          </button>-->
+
+          <button class="button button-large button-clear button-dark icon" ng-click='togglePlay()'
+                  ng-class="{'ion-play': sound.paused, 'ion-pause': !sound.paused}">
           </button>
+          <button class="button button-large button-clear button-dark icon ion-stop" ng-click='sound.restart()'></button>
+
           <button class="button button-large button-clear button-dark icon ion-ios-skipforward col"
                   ng-click="playNext()">
           </button>
+
         </div>
       </div>
+
+
+      <!--RANGE INPUT-->
       <div class="item range range-positive">
-        <input type="range" name="volume" ng-model="currentLanguage.points[data.index].progress" min="0"
-               max="{{currentLanguage.points[data.index].duration}}" ng-change="playSound(currentLanguage.points[data.index].progress)">
+        <!-- <input type="range" name="volume" ng-model="currentLanguage.points[data.index].progress" min="0"
+                max="{{currentLanguage.points[data.index].duration}}" ng-change="playSound(currentLanguage.points[data.index].progress)">-->
+
+        <input type="range" name="volume"
+               ng-model="sound.currentTime"
+               min="0"
+               max="{{currentLanguage.points[data.index].duration}}"
+               step="0.1">
+
       </div>
+
+      <br>
+      <br>
+
     </div>
+    <!--End of card-->
 
     <!--Description Card-->
     <div class="card rounded-corners">
       <div class="row row-center">
         <div class="col col-center">
-          <button class="button map-button" ng-click="navigateToMap()">{{currentLanguage.menuItems[0].item3}}</button>
+          <button class="button button-small map-button" ng-click="navigateToMap()">
+            {{currentLanguage.menuItems[0].item3}}
+          </button>
         </div>
       </div>
-      <p class="description-text">
-        {{currentLanguage.points[data.index].description}}
+      <p class="description-text" ng-bind-html="currentLanguage.points[data.index].description"
+         ng-class="currentLanguage.language === 'hebrew' ? 'text-right' : 'text-justify'">
+        <!--{{currentLanguage.points[data.index].description}}-->
       </p>
       <!--<div class="item item-text" ng-if="currentLanguage.points[data.index].description">
         {{currentLanguage.points[data.index].description}}
