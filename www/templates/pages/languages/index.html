@@ -17,20 +17,20 @@
       <div class="item item-avatar">
         <img src="img/logo.png">
 
-        <h2 class="card-title">WELCOME TO KASTORIA<br>PLEASE SELECT LANGUAGE</h2>
+        <h2 class="card-title" style="font-size: 4vw">WELCOME TO KASTORIA<br>PLEASE SELECT LANGUAGE</h2>
       </div>
     </div>
 
     <!--Languages List-->
-      <ion-list ng-repeat="item in languages">
-        <ion-item class="row row-center languages-item" ng-click="selectLanguage(item.language)">
+    <ion-list ng-repeat="item in languages">
+      <ion-item class="row row-center languages-item" ng-click="selectLanguage(item.language)">
 
-          <img ng-src="img/flags/{{item.language}}.png">
+        <img ng-src="img/flags/{{item.language}}.png">
 
-          <span>{{item.languageTitle}}</span>
+        <span style="font-size: 5vw">{{item.languageTitle}}</span>
 
-        </ion-item>
-      </ion-list>
+      </ion-item>
+    </ion-list>
 
   </ion-content>
 </ion-view>

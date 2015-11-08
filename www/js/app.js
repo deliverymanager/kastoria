@@ -18,6 +18,13 @@ angular.module('kastoria', ['ionic', 'ngIOS9UIWebViewPatch', 'ngAudio'])
         // org.apache.cordova.statusbar required
         StatusBar.styleDefault();
       }
+      if (window.cordova) {
+        ionic.Platform.fullScreen();
+        console.log('Orientation is ' + screen.orientation);
+        screen.lockOrientation('portrait-primary');
+        console.log('Orientation is ' + screen.orientation);
+      }
+
     });
   })
 
